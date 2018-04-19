@@ -1,24 +1,26 @@
-# README
+# Overtime Tracker
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ App that keeps track of overtime hours logged by salaried workers
 
-Things you may want to cover:
+## Set-up
+- `git clone `
+- `cd overtime-tracker`
+- `bundle install`
+- `rake db:migrate && rake db:seed`
+- `rails server` or `rails s`
+- navigate to *localhost:3000*
 
-* Ruby version
+## Features
+- Approval workflow
+- SMS sending: link to approval or overtime input
+- Administrate admin dashboard
+- Email summary to managers/superusers for approval
+- Needs to be documented if employee did not log overtime
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Tech Used
+- Ruby
+- Rails (devise, administrate, .dotenv) gems
+- JS
+- Bootstrap (UI)
+- RSpec (Testing)
+- Twilio API (Messaging)
